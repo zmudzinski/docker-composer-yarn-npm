@@ -1,2 +1,2 @@
 # docker-composer-yarn-npm
-Simple Docker with composer yarn and npm
+This is a simple Dockerfile with composer, npm and yarn. It can be used to deploy PHP app in GitLab CI
