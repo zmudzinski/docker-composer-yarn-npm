@@ -4,7 +4,8 @@ FROM php:7-alpine
 RUN apk upgrade && apk add \
     curl \
     nodejs npm \
-    yarn
-
+    yarn \
+    openssh-client
+    
 # Install Composer
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
