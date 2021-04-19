@@ -6,7 +6,11 @@ RUN apk upgrade && apk add \
     nodejs npm \
     yarn \
     openssh-client \
-    git
+    git \
+    libpng-dev
+
+# Install GD
+RUN docker-php-ext-install gd
 
 # Install Composer
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
