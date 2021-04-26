@@ -7,7 +7,8 @@ RUN apk upgrade && apk add \
     yarn \
     openssh-client \
     git \
-    libpng-dev
+    libpng-dev \
+    libxml2-dev
 
 # Install GD & Exif
 RUN docker-php-ext-install gd
