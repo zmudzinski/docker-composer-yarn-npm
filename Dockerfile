@@ -8,7 +8,12 @@ RUN apk upgrade && apk add \
     openssh-client \
     git \
     libpng-dev \
-    libxml2-dev
+    libxml2-dev \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd
 
 # Install GD & Exif
 RUN docker-php-ext-install gd
