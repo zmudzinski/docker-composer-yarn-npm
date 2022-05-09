@@ -1,4 +1,4 @@
-FROM php:8.1.6RC1-zts-alpine3.15
+FROM php:8.1.5-alpine
 
 RUN apk upgrade && apk add \
     curl \
