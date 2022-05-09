@@ -1,6 +1,5 @@
-FROM php:8-alpine
+FROM php:8.1.6RC1-zts-alpine3.15
 
-# Install CURL
 RUN apk upgrade && apk add \
     curl \
     nodejs npm \
